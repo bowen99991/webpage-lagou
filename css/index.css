@@ -675,35 +675,365 @@ body {
   margin-left: -26px;
 }
 
+/* 热门职位-  查看更多按钮 */
+
+.allday-hot .more {
+  margin-bottom: 20px;
+  display: block;
+  width: 387px;
+  height: 42px;
+  border: 1px solid #00b38a;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 42px;
+  text-align: center;
+  color: #66b48b;
+  text-decoration: none;
+}
+
+.allday-hot .more:hover {
+  color: #fff;
+  background-color: #66b48b;
+}
 
 
 
 
 
+/* 热门互联网公司 --------开始 */
+
+.hot-company .title span.current {
+  height: 35px;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.hot-company .title span {
+  /* float: left; */
+  height: 48px;
+  line-height: 48px;
+  margin-right: 58px;
+  font-size: 16px;
+  color: #999;
+  cursor: pointer;
+}
+
+
+
+/* 热门公司信息 --存在公共内容-*/
+.hot-company .detail ul {
+  width: 1220px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hot-company .detail ul li {
+  margin-right: 16px;
+  margin-bottom: 16px;
+  width: 260px;
+  height: 248px;
+  padding: 20px 13px 0;
+  /* background-color: pink; */
+  border: 1px solid #ccc;
+}
+
+/* 公司信息top内容 */
+.hot-company .detail .current .top {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  border-bottom: 1px dashed #ccc;
+}
+
+.hot-company .detail .current .top .company-logo a img {
+  width: 80px;
+  height: 80px;
+  /* margin: 0 auto; */
+}
+
+.hot-company .detail .current .top h4 a {
+  display: block;
+  margin-top: 25px;
+}
+
+.hot-company .detail .current .top .labels {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #999;
+}
+
+.hot-company .detail .current .top .info {
+  /* overflow: hidden; */
+  width: 260px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* 职位信息底部  */
+.hot-company .detail .current .bottom {
+  /* background-color: pink; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hot-company .detail .current .bottom a {
+  margin-top: 20px;
+  margin-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  border-right: 1px solid #ededed;
+}
+
+.hot-company .detail .current .bottom .item3 {
+  border-right: none;
+}
+
+
+.hot-company .detail ul li .bottom a .data {
+  /* margin-bottom: 24px; */
+  line-height: 14px;
+  color: #00b38a;
+}
+
+/* --------------------------------- */
 
 
 
 
 
-
-/* footer     ------开始 */
-/* 底部热门链接 ---- */
+/* main内容-------热门链接 ---- */
 .module-tabs {
-  /* width: 100%; */
   margin-top: 37px;
   margin-bottom: 54px;
 }
 
 
-/* 底部版权信息 */
+/* 链接字体 */
+.module-tabs .title {
+
+  font-size: 14px;
+  color: #999;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 22px;
+
+}
+
+.module-tabs .title span {
+  display: inline;
+  margin-right: 20px;
+  height: 48px;
+  line-height: 48px;
+}
+
+
+.module-tabs .title .current {
+  color: #000;
+  border-bottom: 2px solid #000;
+  padding-bottom: 13px;
+}
+
+
+/* detail-list ------------- */
+
+.module-tabs .detail-list {
+  width: 100%;
+  height: 30px;
+  overflow: hidden;
+  line-height: 30px;
+}
+
+.module-tabs .detail-list ul {
+  float: left;
+  width: 1130px;
+}
+
+.module-tabs .detail-list ul li a {
+  float: left;
+  margin-right: 18px;
+}
+
+.module-tabs .detail-list .show-or-close {
+  color: #999;
+  float: right;
+  padding-right: 17px;
+  margin-right: 3px;
+  background: url(../images/arrow_down.png) no-repeat right center;
+  color: #999999;
+}
+
+
+
+/* 底部footer 模块 ---------开始 */
+
+.footer {
+  height: 138px;
+  padding-top: 49px;
+  padding-bottom: 66px;
+  background-color: #fff;
+}
+
+.footer .footer-c {
+  display: flex;
+  /* background-color: pink; */
+  height: 138px;
+}
+
+.footer .footer-c .login-method {
+  position: relative;
+  width: 312px;
+  height: 138px;
+  border-right: 1px solid #e8e8e8;
+  /* background-color: red; */
+}
+
+
+/* 按钮样式 */
+.footer .footer-c .login-method .login-method-btn {
+  display: block;
+  width: 180px;
+  height: 40px;
+  border: 1px solid #00b38a;
+  margin-bottom: 16px;
+  color: #00b38a;
+  line-height: 40px;
+  text-align: center;
+}
+
+.footer .login-method .login-method-btn:hover {
+  background-color: #00b38a;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer .login-method img {
+  position: absolute;
+  left: 191px;
+  top: 50px;
+  width: 140px;
+  height: 140px;
+  border: 1px solid #ccc;
+  display: none;
+}
+
+
+.footer .login-method .mini-pro i {
+  width: 16px;
+  height: 14px;
+  background-position: -214px -54px;
+}
+
+
+
+/* 控制 二维码显示隐藏 */
+.footer .login-method .login-method-btn:hover img {
+  display: block;
+}
+
+
+
+.footer .footer-c .service {
+  flex: 1;
+  display: flex;
+  width: 757px;
+  height: 138px;
+  padding-left: 130px;
+  /* background-color: skyblue; */
+
+}
+
+.footer .footer-c .service dl {
+  width: 252px;
+}
+
+.footer .footer-c .service dl dt {
+  height: 23px;
+  margin-bottom: 27px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #555555;
+}
+
+.footer .footer-c .service dl dd {
+  display: inline-flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.footer .footer-c .service dl dd a {
+  /* display: block; */
+  height: 32px;
+  line-height: 32px;
+  text-decoration: none;
+}
+
+.footer .footer-c .service dl dd a:hover {
+  color: #00b38a;
+}
+
+
+
+
+
+
+
+
+/* 底部版权信息 footer-info */
+
+.footer-i {
+  background-color: #fafafa;
+}
+
 .footer-info {
   display: flex;
   justify-content: space-evenly;
+  /* align-items: center; */
+  /* margin-bottom: 0px; */
+  padding-bottom: 10px;
   height: 60px;
   padding-top: 28px;
   line-height: 60px;
   background-color: #fafafa
 }
+
+
+.footer-info span a {
+  text-decoration: none;
+  color: #555555;
+}
+
+.footer-info .jubao {
+  float: left;
+  position: relative;
+  width: 136px;
+  padding: 8px 0 8px 50px;
+  border: 1px solid #d5dadf;
+  font-size: 12px;
+  line-height: 14px;
+  color: #999999;
+}
+
+
+.footer-info .jubao i {
+  position: absolute;
+  left: 20px;
+  top: 17px;
+  width: 20px;
+  height: 24px;
+  background: url(../images/sprite_02.png) no-repeat -132px -20px;
+}
+
+.footer-info .lagou-icon {}
 
 
 
@@ -724,29 +1054,28 @@ body {
 
 
 
-
-/* 热门职位-  查看更多 */
-
-.allday-hot .more {
-  display: block;
-  width: 387px;
-  height: 42px;
-  border: 1px solid #00b38a;
-  margin: 0 auto;
-  font-size: 16px;
-  line-height: 42px;
-  text-align: center;
-  color: #66b48b;
-}
-
-
-
-/* logo */
+/* footer底部版权信息  logo */
 
 .lagou-icon {
-  float: right;
+  margin-left: 300px;
   width: 198px;
   height: 19px;
   margin-top: 21px;
   background: url(../images/footer_lagou_icon.png) no-repeat;
+}
+
+/* 底部版权信息 --------结束  */
+
+
+
+
+/* 页面固定定位 */
+.comeback {
+  position: fixed;
+  margin-left: 630px;
+  left: 50%;
+  bottom: 88px;
+  width: 30px;
+  height: 48px;
+  background: url(../images/backtop.png) no-repeat 0 0;
 }
